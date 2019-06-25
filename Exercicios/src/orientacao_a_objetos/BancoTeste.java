@@ -6,16 +6,18 @@ public class BancoTeste {
 
 		Cliente newCli1 = new Cliente();
 		Cliente newCli2 = new Cliente();
-		Cartao newCC1 = new Cartao();
-		Cartao newCC2 = new Cartao();
-		Agencia newAG1 = new Agencia();
-		Agencia newAG2 = new Agencia();
+		CartaoDeCredito newCC1 = new CartaoDeCredito();
+		CartaoDeCredito newCC2 = new CartaoDeCredito();
+		Agencia newAG1 = new Agencia(1544);
+		Agencia newAG2 = new Agencia(1544);
 		Conta cont1 = new Conta();
 		Conta cont2 = new Conta();
+		
+		
 
 		newCli1.nome = "Gerhard"; 
 		newCli1.cdCli = 745862;
-		newAG1.cdAg = 1544;
+		//newAG1.cdAg = 1544;
 		cont1.numero = 90684;
 		cont1.saldo = 758.47;
 		cont1.limite = 516.65;
@@ -35,7 +37,7 @@ public class BancoTeste {
 
 		newCli2.nome = "Nina";
 		newCli2.cdCli = 886789;
-		newAG2.cdAg = 1511;
+		//newAG2.cdAg = 1511;
 		cont2.numero = 9841;
 		cont2.saldo = 9875;
 		cont2.limite = 418.26;
@@ -54,7 +56,7 @@ public class BancoTeste {
 		System.out.println("-----------------------------------------------------");
 
 		Cliente clientcart = new Cliente();
-		Cartao cartclient = new Cartao();
+		CartaoDeCredito cartclient = new CartaoDeCredito();
 		Agencia novaag = new Agencia();
 		Conta newAbert = new Conta();
 
@@ -86,7 +88,15 @@ public class BancoTeste {
 		newAbert.sacar(1874.15);
 		System.out.println(newAbert.saldo);
 		System.out.println(newAbert.Extrato("Verificar"));
+		
+		
+		System.out.println("---------------------------------------------");
 
+	
+		
+		
+		
+		
 	}
 
 }

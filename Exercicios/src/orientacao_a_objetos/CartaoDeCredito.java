@@ -1,6 +1,6 @@
 package orientacao_a_objetos;
 
-public class Cartao {
+public class CartaoDeCredito {
 	
 	
 	 int numero;
